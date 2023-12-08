@@ -1,0 +1,10 @@
+
+
+.container__card__modal {
+    display: flex;
+    justify-content: center;
+}
+
+.content__section__modal {
+    grid-template-columns: repeat(1, 1fr);
+}

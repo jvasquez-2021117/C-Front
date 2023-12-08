@@ -1,0 +1,115 @@
+:root  {
+    --color-fondo: #f2f3f3;
+    --color-letra: #38a4b7;
+}
+
+.welcome {
+    height: auto;
+    display: flex;
+    background-color: var(--color-fondo);
+    justify-content: center;
+    width: 100%;
+}
+
+.welcome_container {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: 1440px;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.image img {
+    width: 600px;
+    height: 600px;
+}
+.slogan {
+    height: auto;
+    display: block;
+}
+
+.slogan span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.slogan .description span {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: var(--color-letra);
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .slogan span {
+        font-size: 40px;
+    }
+
+    .slogan .description span {
+        font-size: 15px;
+    }
+
+    .image img{
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .welcome_container {
+        padding: 20px 0px 0px 0px;
+        display: block;
+    }
+
+    .slogan {
+        text-align: center;
+    }
+
+    .image {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .image img {
+        object-fit:cover;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    .image {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .image img {
+        object-fit:cover;
+    }
+
+    .slogan span {
+        font-size: 30px;
+    }
+
+    .slogan .description span {
+        font-size: 10px;
+    }
+
+    .image {
+        height: 110px;
+        overflow: hidden;
+    }
+
+    .image img{
+        width: 300px;
+        height: 300px;
+    }
+
+}

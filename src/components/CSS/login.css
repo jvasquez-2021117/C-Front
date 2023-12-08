@@ -1,0 +1,254 @@
+.contt {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/img/fondoLogin.png');
+    background-size: cover;
+    padding: 30px;
+  }
+
+  .containerLog {
+    position: relative;
+    width: 100%;
+    background: #f2f3f3;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .containerLog .cover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+  }
+  
+  .containerLog #flip:checked~.cover {
+    transform: rotateY(-180deg);
+  }
+  
+  .containerLog .cover .front,
+  .containerLog .cover .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .containerLog .cover img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+  }
+  
+  .containerLog .cover .text {
+    position: absolute;
+    z-index: 130;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerLog .cover .imgs {
+    position: absolute;
+    z-index: 130;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cover .text .text-1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .cover .text .text-2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .containerLog .forms {
+    height: 100%;
+    width: 50%;
+    background: #f2f3f3;
+  }
+  
+  .containerLog .form-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  .forms .form-content .title__login {
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    align-items: end;
+  }
+  
+  .forms .form-content .title__login:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #fdbf5c;
+  }
+  
+  .forms .signup-form .title__login:before {
+    width: 20px;
+  }
+  
+  .forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+  }
+  
+  .form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+  
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .form-content .input-box input:focus {
+    border-color: #f69a0b;
+  }
+  
+  .form-content .input-box i {
+    position: absolute;
+    color: #f69a0b;
+    font-size: 17px;
+  }
+  
+  .forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .forms .form-content .text a {
+    text-decoration: none;
+  }
+  
+  .forms .form-content .text a:hover {
+    text-decoration: underline;
+  }
+  
+  .forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  .forms .form-content .button input {
+    color: #fff;
+    background: #f26c4f;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .input-box input {
+    background-color: #f2f3f3;
+  }
+  
+  .forms .form-content .button input:hover {
+    background: #c74e21;
+  }
+  
+  .forms .form-content label {
+    color: #5988e7;
+    cursor: pointer;
+  }
+  
+  .forms .form-content label:hover {
+    text-decoration: underline;
+  }
+  
+  .forms .form-content .login-text,
+  .forms .form-content .sign-up-text {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .containerLog #flip {
+    display: none;
+  }
+
+  .form-content .login-form {
+    width: 100%;
+    padding: 0px 30px 0px 0px;
+  }
+  
+  @media (max-width: 730px) {
+
+    .containerLog .forms {
+      width: 100%;
+    }
+
+    .form-content .login-form {
+      padding: 0px;
+    }
+
+    .form-content {
+      width: 100%;
+      display: block;
+    }
+
+    .containerLog .cover {
+      display: none;
+    }
+  
+    .form-content .login-form,
+    .form-content .signup-form {
+      width: 100%;
+    }
+  
+    .form-content .signup-form {
+      display: none;
+    }
+  
+    .containerLog #flip:checked~.forms .signup-form {
+      display: block;
+    }
+  
+    .containerLog #flip:checked~.forms .login-form {
+      display: none;
+    }
+  }
+  
+  .form-select {
+    border-color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  }

@@ -1,0 +1,58 @@
+.view__container {
+    background-color: #f2f3f3;
+    height: calc(100vh - 86px);
+}
+
+.tableUsers {
+    height: 400px;
+}
+
+.table .t__table {
+    background: #38a4b7;
+}
+
+.a1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+.search-box {
+    width: 600px;
+    background: #fff;
+    margin: 20px auto 20px;
+    border-radius: 5px;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.row1 input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.row1 button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button .bi-solid {
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}

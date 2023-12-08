@@ -1,0 +1,37 @@
+:root {
+    --color-fondo-title: #f2f3f3;
+    --color-card: #f2f3f3;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2f33;
+    color: #fff;
+    border-radius: 40px 40px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+ .title__container {
+    padding: 10px 50px;
+
+ }
+
+ .title__container h2 {
+    font-size: 40px;
+ }
+
+ .btn__add__container {
+    padding: 10px 20px;
+ }
+
+ .btn__add__container button{
+    border: none;
+    background-color: #38a4b7;
+    padding: 5px 20px;
+    color: var(--color-card);
+    border-radius: 20px;
+ }
+  
